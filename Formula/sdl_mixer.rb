@@ -9,11 +9,6 @@ class SdlMixer < Formula
   head do
     url "https://github.com/libsdl-org/SDL_mixer.git", branch: "SDL-1.2"
 
-    patch do
-      url "https://github.com/libsdl-org/SDL_mixer/commit/a3e5ff8142cf3530cddcb27b58f871f387796ab6.diff"
-      sha256 "334e10529313a7d30c75a547fcd8392a7b8cdd736eaddb5c2820a877dfc835a4"
-    end
-
     depends_on "autoconf" => :build
     depends_on "automake" => :build
     depends_on "libtool" => :build
@@ -30,6 +25,11 @@ class SdlMixer < Formula
   resource "playwave" do
     url "https://github.com/libsdl-org/SDL_mixer/raw/1a14d94ed4271e45435ecb5512d61792e1a42932/playwave.c"
     sha256 "92f686d313f603f3b58431ec1a3a6bf29a36e5f792fb78417ac3d5d5a72b76c9"
+  end
+
+  patch do
+    url "https://github.com/libsdl-org/SDL_mixer/commit/a3e5ff8142cf3530cddcb27b58f871f387796ab6.diff"
+    sha256 "334e10529313a7d30c75a547fcd8392a7b8cdd736eaddb5c2820a877dfc835a4"
   end
 
   def install
