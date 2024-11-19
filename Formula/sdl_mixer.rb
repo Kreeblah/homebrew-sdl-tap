@@ -9,6 +9,11 @@ class SdlMixer < Formula
   head do
     url "https://github.com/libsdl-org/SDL_mixer.git", branch: "SDL-1.2"
 
+    patch do
+      url "https://github.com/libsdl-org/SDL_mixer/commit/a3e5ff8142cf3530cddcb27b58f871f387796ab6.diff"
+      sha256 "334e10529313a7d30c75a547fcd8392a7b8cdd736eaddb5c2820a877dfc835a4"
+    end
+
     depends_on "autoconf" => :build
     depends_on "automake" => :build
     depends_on "libtool" => :build
