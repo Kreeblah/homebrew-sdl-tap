@@ -21,6 +21,11 @@ class SdlSound < Formula
   depends_on "libvorbis"
   depends_on "sdl12-compat"
 
+  patch do
+    url "https://github.com/icculus/SDL_sound/commit/11acb6cd3a7744dc6f0383aa6ef0fe1a531b99aa.diff"
+    sha256 "a28821936566129035441dd976e8863eba49bf3240413a8c7c80eaf5342ba4cb"
+  end
+
   def install
     system "./autogen.sh" if build.head?
 
