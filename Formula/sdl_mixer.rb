@@ -5,10 +5,7 @@ class SdlMixer < Formula
       revision: "174ce82f4445c7a95cd021ee103135d04de83a7b"
   version "1.2.13-HEAD"
   license "Zlib"
-
-  head do
-    url "https://github.com/libsdl-org/SDL_mixer.git", branch: "SDL-1.2"
-  end
+  head "https://github.com/libsdl-org/SDL_mixer.git", branch: "SDL-1.2"
 
   depends_on "pkgconf" => :build
   depends_on "flac"

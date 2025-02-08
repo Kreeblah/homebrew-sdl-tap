@@ -5,10 +5,7 @@ class SdlImage < Formula
       revision: "3ae305b63db52b753333141d9536d23815a9f97f"
   version "1.2.13-HEAD"
   license "Zlib"
-
-  head do
-    url "https://github.com/libsdl-org/SDL_image.git", branch: "SDL-1.2"
-  end
+  head "https://github.com/libsdl-org/SDL_image.git", branch: "SDL-1.2"
 
   depends_on "pkgconf" => :build
   depends_on "jpeg-turbo"
