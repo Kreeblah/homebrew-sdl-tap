@@ -48,11 +48,6 @@ class SdlMixer < Formula
   end
 
   patch do
-    url "https://github.com/libsdl-org/SDL_mixer/commit/50432a0e0209767f533406d6925bcbb8c3e6c46c.diff"
-    sha256 "549157574df69a742d959b69630fd38f428236294dc0d8255cbe46308f45a14d"
-  end
-
-  patch do
     url "https://github.com/libsdl-org/SDL_mixer/commit/05b12a3c22c0746c29dc5478f5b7fbd8a51a1303.diff"
     sha256 "d31a0544af94ac2a78aa55219c87644e496b85d9968ace3680ec51f3a09d0975"
   end
