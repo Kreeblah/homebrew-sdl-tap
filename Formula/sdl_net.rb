@@ -1,9 +1,10 @@
 class SdlNet < Formula
   desc "Sample cross-platform networking library"
   homepage "https://www.libsdl.org/projects/SDL_net/release-1.2.html"
-  url "https://www.libsdl.org/projects/SDL_net/release/SDL_net-1.2.8.tar.gz"
-  sha256 "5f4a7a8bb884f793c278ac3f3713be41980c5eedccecff0260411347714facb4"
-  revision 1
+  url "https://github.com/libsdl-org/SDL_net.git",
+      revision: "0043be2e559f8d562d04bf62d6e3f4162ed8edad"
+  version "1.2.9-HEAD"
+  license "Zlib"
 
   head do
     url "https://github.com/libsdl-org/SDL_net.git", branch: "SDL-1.2"
