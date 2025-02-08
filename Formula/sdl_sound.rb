@@ -8,10 +8,6 @@ class SdlSound < Formula
 
   head do
     url "https://github.com/icculus/SDL_sound.git", branch: "stable-1.0"
-
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "libtool" => :build
   end
 
   keg_only "it conflicts with `sdl2_sound`"

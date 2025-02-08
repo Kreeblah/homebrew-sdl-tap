@@ -8,10 +8,6 @@ class SdlMixer < Formula
 
   head do
     url "https://github.com/libsdl-org/SDL_mixer.git", branch: "SDL-1.2"
-
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "libtool" => :build
   end
 
   depends_on "pkgconf" => :build
