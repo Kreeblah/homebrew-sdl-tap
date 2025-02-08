@@ -42,6 +42,11 @@ class SdlMixer < Formula
     sha256 "e33a7b1b4d143b34d26965825aca535ea5ed77cba986e91026b769c397436521"
   end
 
+  patch do
+    url "https://github.com/libsdl-org/SDL_mixer/commit/05b12a3c22c0746c29dc5478f5b7fbd8a51a1303.diff"
+    sha256 "d31a0544af94ac2a78aa55219c87644e496b85d9968ace3680ec51f3a09d0975"
+  end
+
   def install
     inreplace "SDL_mixer.pc.in", "@prefix@", HOMEBREW_PREFIX
 
