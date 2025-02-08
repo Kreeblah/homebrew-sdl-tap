@@ -34,6 +34,11 @@ class SdlImage < Formula
     sha256 "ccc6631adfd10f4265156cf88666bea974aa304996d2efcebf3ade3074312a9f"
   end
 
+  patch do
+    url "https://github.com/libsdl-org/SDL_image/commit/abb2c39f0326bd5ec3ebde314907c71a8487e997.diff"
+    sha256 "1d496f6817ccf5a8e5b63ae135e0a8ee09cbefdcabcf5115d4452d9fb82574db"
+  end
+
   def install
     inreplace "SDL_image.pc.in", "@prefix@", HOMEBREW_PREFIX
 
